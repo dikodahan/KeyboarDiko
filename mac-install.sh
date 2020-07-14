@@ -22,7 +22,7 @@ if ! test -f $LOG; then
     # Installing prerequisites
     echo "\033[1;7mThe installer will now install some prerequisites to run the application. You will be prompt for your computer password to approve the installation.\033[0m"
     echo
-    curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh
+    curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | bash
     brew install wget
     mkdir $FOLDER
     chflags hidden $FOLDER
