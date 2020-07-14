@@ -69,7 +69,7 @@ else
         unzip -u $FOLDER/Mac.zip -d $FOLDER
         rm -r $FOLDER/Mac.zip
         cp -fR $FOLDER/*Global* ~/Library/Services/
-        sed -e '1s/.*/$(curl -s https://raw.githubusercontent.com/dikodahan/KeyboarDiko/master/version)/' -i '' $LOG
+        sed -e "1s/.*/$(curl -s https://raw.githubusercontent.com/dikodahan/KeyboarDiko/master/version)/" -i '' $LOG
         echo "System hook installation files have been updated!"
         echo
     fi
