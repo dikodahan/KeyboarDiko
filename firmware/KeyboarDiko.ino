@@ -32,10 +32,18 @@ void loop()
  Serial.println("Hello world");  // Print "Hello World" to the Serial Monitor
  Serial1.println("Hello!");  // Print "Hello!" over hardware UART
 
- digitalWrite(RXLED, LOW);   // set the LED on
+ digitalWrite(RXLED, HIGH);   // set the LED on
  TXLED0; //TX LED is not tied to a normally controlled pin
- delay(1000);              // wait for a second
+ delay(3000);              // wait for a second
+ digitalWrite(RXLED, LOW);    // set the LED off
+ TXLED1;
+ delay(300);
  digitalWrite(RXLED, HIGH);    // set the LED off
  TXLED1;
- delay(1000);              // wait for a second
+ delay(300);
+ digitalWrite(RXLED, LOW);    // set the LED off
+ TXLED0;
+ delay(300);
+ digitalWrite(RXLED, HIGH);    // set the LED off
+ TXLED0;             // wait for a second
 }
