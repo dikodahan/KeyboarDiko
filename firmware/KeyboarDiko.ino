@@ -37,13 +37,5 @@ void loop()
  delay(3000);              // wait for a second
  digitalWrite(RXLED, LOW);    // set the LED off
  TXLED1;
- delay(300);
- digitalWrite(RXLED, HIGH);    // set the LED off
- TXLED1;
- delay(300);
- digitalWrite(RXLED, LOW);    // set the LED off
- TXLED0;
- delay(300);
- digitalWrite(RXLED, HIGH);    // set the LED off
- TXLED0;             // wait for a second
+ delay(3000);
 }
